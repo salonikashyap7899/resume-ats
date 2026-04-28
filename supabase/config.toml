@@ -1,4 +1,10 @@
-project_id = "nljgyaxhpwpxtlpwnavx"
+project_id = "cmxkuvnquqbcumqafnzl"
 
 [functions.analyze-resume]
+verify_jwt = false
+
+[functions.career-tools]
+verify_jwt = false
+
+[functions.rewrite-resume]
 verify_jwt = false
