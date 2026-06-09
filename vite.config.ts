@@ -7,6 +7,14 @@ export default defineConfig({
         "resume-ats-dfpp.onrender.com", // Your specific Render host
         ".onrender.com"                // Allows any sub-domain on Render
       ]
+    },
+    build: {
+      minify: 'terser',
+      cssMinify: true,
+      sourcemap: false,
+    },
+    define: {
+      'process.env.NODE_ENV': JSON.stringify('production'),
     }
   }
 });
